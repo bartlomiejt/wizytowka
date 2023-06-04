@@ -10,13 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Saira:wght@400;700&display=swap" rel="stylesheet">
 
-
-
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 
 <body>
-    <nav id="navbar" class="nav">
+    <!-- <nav id="navbar" class="nav">
     <div class="wrapper wrapper--nav">
         <div class="nav__logo">
             <a href="#"><i class="fa-solid fa-tree"> Forest</i></a>
@@ -36,7 +36,7 @@
         <a href="index.html#offers" class="nav__mob">Oferta</a>
         <a href="contact.html" class="nav__mob">Kontakt</a>
     </div>
-</nav>
+</nav> -->
 
     <header class="header">
         <div class="header__shadow"></div>
@@ -51,25 +51,47 @@
 
     <section class="aboutus">
         <div class="wrapper">
-            <h2>Oferta</h2>
+            <h2>to zyskasz</h2>
             <div class="aboutus__boxes">
-                <div class="aboutus__box">
+                <div class="aboutus__box" data-aos="zoom-in" data-aos-delay="50">
                     <div class="aboutus__box-img">
-                        <img src="dist/img/google-408194_640.png" alt="logo google">
+                        <img src="dist/img/flat-2126876_640.png" alt="logo google">
                     </div>
                     <div class="aboutus__box-text">
-                        <h3>SEO - Pozycjowanie</h3>
+                        <h3>Ulepsz Biznes</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum ducimus sint ea est
                             veritatis velit ut. Eum architecto sit, deleniti aut aspernatur dolore, repellat, labore
                             possimus illum hic rem?2</p>
                     </div>
                 </div>
-                <div class="aboutus__box">
+                <div class="aboutus__box" data-aos="zoom-in" data-aos-delay="250">
                     <div class="aboutus__box-img">
-                        <img src="dist/img/wlan-3131126_640.png" alt="logo google">
+                        <img src="dist/img/technology-2468063_640.png" alt="logo google">
                     </div>
                     <div class="aboutus__box-text">
-                        <h3>RWD - Responsywność</h3>
+                        <h3>Responsywność</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum ducimus sint ea est
+                            veritatis velit ut. Eum architecto sit, deleniti aut aspernatur dolore, repellat, labore
+                            possimus illum hic rem?</p>
+                    </div>
+                </div>
+                <div class="aboutus__box" data-aos="zoom-in" data-aos-delay="550">
+                    <div class="aboutus__box-img">
+                        <img src="dist/img/moneybag-g0348ac8d2_640.png" alt="logo google">
+                    </div>
+                    <div class="aboutus__box-text">
+                        <h3>zwiększ swoje zyski</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum ducimus sint ea est
+                            veritatis velit ut. Eum architecto sit, deleniti aut aspernatur dolore, repellat, labore
+                            possimus illum hic rem?</p>
+                    </div>
+                </div>
+                <div class="aboutus__box" data-aos="zoom-in" data-aos-delay="950">
+                    <div class="aboutus__box-img">
+                        <img src="dist/img/seo-gc2b54322f_640.png" alt="logo google">
+                    </div>
+                    <div class="aboutus__box-text">
+                        <h3>SEO - Pozycjowanie</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi laborum ducimus sint ea est
                             veritatis velit ut. Eum architecto sit, deleniti aut aspernatur dolore, repellat, labore
                             possimus illum hic rem?</p>
@@ -79,12 +101,108 @@
         </div>
     </section>
 
+    <section class="numbers">
+        <div class="numbers__shadow"></div>
+        <div class="wrapper">
+
+            <div class="numbers__box">
+                <div class="numbers__box-item">
+
+                    <div class="counter" data-number="100">0</div>
+                    <p>procent włożonego serca</p>
+                </div>
+                <div class="numbers__box-item">
+
+                    <div class="counter" data-number="0">0</div>
+                    <p>niezadowolnych klientów</p>
+                </div>
+                <div class="numbers__box-item">
+
+                    <div class="counter" data-number="2136">0</div>
+                    <p>wypitych kubków kawy</p>
+                </div>
+                <div class="numbers__box-item">
+
+                    <div class="counter" data-number="2023">0</div>
+                    <p>najnowsza technologia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="portofolio">
+        <div class="wrapper">
+            <h2>portofolio</h2>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide portofolio__carousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="dist/img/mmclong.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption portofolio__carousel-text">
+                      <h5>Live: <a href="https://mmcschool.pl/">https://mmcschool.pl/</a></h5>
+                      <p>Strona z kursami tworzenia stron www</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="dist/img/mmclong.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption portofolio__carousel-text">
+                      <h5>SLive: <a href="https://mmcschool.pl/">https://mmcschool.pl/</a></h5>
+                      <p>Sotrona z kursami tworzenia stron www</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="dist/img/mmclong.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption portofolio__carousel-text ">
+                      <h5>Live: <a href="https://mmcschool.pl/">https://mmcschool.pl/</a></h5>
+                      <p>Strona z kursami tworzenia stron www</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
     <footer class="wrapper">
     <P>test test2</P>
 </footer>
 
 <script src="https://kit.fontawesome.com/0d513453bd.js" crossorigin="anonymous"></script>
 <script src="dist/js/writing.min.js"></script>
+<script src="dist/js/counter.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init(
+        {
+            startEvent: 'DOMContentLoaded',
+            offset: 400,
+            once: true,
+            duration: 800,
+        }
+    );
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 
 </html>

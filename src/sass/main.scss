@@ -1,0 +1,300 @@
+@use './colors' as *;
+@use './components' as *;
+@use './animations' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: $background-color;
+	color: white;
+	font-family: 'Saira', sans-serif;
+}
+
+nav {
+	display: none;
+}
+
+h2 {
+	text-align: center;
+	font-size: 3rem;
+	text-transform: uppercase;
+	font-weight: normal;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 100vh;
+	@include wideImages('../img/programming-1873854_1280.png');
+
+	&__shadow {
+		@include wideShadow;
+	}
+	&__welcome {
+		position: absolute;
+		top: 30vh;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 5rem;
+		color: orange;
+		z-index: 6;
+		margin-bottom: 2rem;
+		text-transform: uppercase;
+	}
+	&__text {
+		position: absolute;
+		width: 90%;
+		left: 50%;
+		transform: translateX(-50%);
+		font-size: 2rem;
+		z-index: 6;
+		text-transform: uppercase;
+	}
+	&__scroll {
+		position: absolute;
+		z-index: 6;
+		padding: 1rem;
+		bottom: 5%;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.fa-angles-down {
+	animation: pulse 3s infinite linear;
+}
+
+// ==================
+// ABOUTUS
+// ==================
+.aboutus {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin: 5rem 1rem;
+
+	&__boxes {
+		padding: 3rem 1rem;
+	}
+	&__box {
+		padding: 4rem 2rem;
+		margin: 3rem auto;
+		position: relative;
+		background-color: $section1-color;
+
+		&-text > h3 {
+			font-size: 2.5rem;
+			padding: 2rem 0;
+			text-transform: uppercase;
+		}
+		&-text > p {
+			text-align: left;
+		}
+
+		&-img > img {
+			object-fit: cover;
+			width: 60%;
+		}
+	}
+}
+// ==================
+// NUMBERS
+// ==================
+.numbers {
+	height: 100vh;
+	@include wideImages('../img/manhattan-3810051_1280.jpg');
+	background-attachment: fixed;
+	margin: 4rem auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__shadow {
+		@include wideShadow;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+		padding: 3rem 2rem;
+		height: 500px;
+		width: 100%;
+
+		&-item {
+			width: 90%;
+			text-align: center;
+			text-transform: uppercase;
+			font-size: 1.5rem;
+			z-index: 6;
+		}
+	}
+}
+
+.counter {
+	font-size: 3rem;
+	margin-bottom: 2rem;
+}
+
+// ==================
+// Portofolio
+// ==================
+
+.portofolio {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	margin: 4rem 1rem;
+
+	&__carousel {
+		margin: 4rem 0;
+		&-text {
+			padding: 1rem;
+			background-color: rgba(238, 235, 235, 0.874);
+			border-radius: 10%;
+		}
+	}
+}
+
+// ==================
+// technology
+// ==================
+
+.technology {
+	display: flex;
+	align-items: center;
+
+	&__boxes {
+		padding: 3rem 1rem;
+
+		&-img {
+			display: flex;
+			justify-content: center;
+		}
+
+		&-img img {
+			width: 80%;
+			padding: 3rem;
+		}
+	}
+}
+
+// ==================
+// contact
+// ==================
+.contact {
+	padding: 3rem 2rem;
+
+	&__form {
+		display: grid;
+		grid-template-columns: repeat(6, 1fr);
+	}
+	&__form-box {
+		label {
+			display: block;
+			margin-bottom: 0.5rem;
+			font-size: 2rem;
+		}
+
+		textarea {
+			max-width: 100%;
+			width: 100%;
+			min-width: 100%;
+		}
+
+		input,
+		textarea {
+			padding: 1rem 1rem;
+			margin-bottom: 2em;
+			width: 100%;
+			background: none;
+			color: #fff;
+			border: 1px solid rgb(216, 216, 216);
+
+			&:focus {
+				outline: none;
+				border: 2px solid rgb(237, 236, 236);
+			}
+		}
+
+		&:nth-child(1) {
+			grid-column: 1/-1;
+			grid-row: 1/2;
+		}
+		&:nth-child(2) {
+			grid-column: 1/-1;
+			grid-row: 2/3;
+		}
+		&:nth-child(3) {
+			grid-column: 1/-1;
+			grid-row: 3/4;
+		}
+	}
+	&__form-btn {
+		grid-column: 1/7;
+		grid-row: 4/5;
+		padding: 2rem 8rem;
+		border: 1px solid rgb(255, 255, 255);
+		background: none;
+		font-size: 2rem;
+		font-weight: bold;
+		color: rgb(250, 248, 248);
+		cursor: pointer;
+		transition: background-color 0.3s, color 0.3s;
+
+		&:hover,
+		&:focus {
+			outline: none;
+			color: white;
+			background-color: black;
+		}
+	}
+	&__agree {
+		margin: 2rem auto;
+		text-align: left;
+		line-height: 160%;
+		font-size: 1.2rem;
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+// ==================
+// footer
+// ==================
+
+.footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-top: 1px solid rgb(88, 88, 88);
+
+	&__text {
+		font-size: 2rem;
+		margin: 3rem 0;
+	}
+}
+
+// ==================
+// MEDIA
+// ==================
+
+@media (min-width: 576px) {
+}

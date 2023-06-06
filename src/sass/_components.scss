@@ -1,0 +1,21 @@
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+@mixin wideImages($bgImg) {
+	background-image: url($bgImg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: scroll;
+}
+
+@mixin wideShadow {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	z-index: 5;
+}
